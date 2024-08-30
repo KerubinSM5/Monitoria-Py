@@ -14,4 +14,4 @@ while True:
     else:
         num_outros += 1
 #saída de dados
-print(f"O numero zero foi digitado {num_zero} ouça frank ocean")
+print(f"O numero zero foi digitado {num_zero}")
