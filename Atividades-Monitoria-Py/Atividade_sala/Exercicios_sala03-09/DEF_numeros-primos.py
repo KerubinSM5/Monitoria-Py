@@ -8,4 +8,5 @@ def nprimos (n):
             return False
     return (f"{n} é primo")
 
-print(nprimos(243))
+n = int(input("Digite um numero: "))
+print(nprimos(n))
