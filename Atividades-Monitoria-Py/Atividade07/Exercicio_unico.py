@@ -24,13 +24,16 @@ class Catalogo: #define o catálogo
             if getattr(livro, criterio) == valor_esp: #getattr: retorna o valor do critério selecionado
                 self.livros.remove(livro) #remove o livro da lista
                 print("Livro removido")
-            else: print("Livro não encontrado")
+            else:
+                print("Livro não encontrado")
 
     def buscar_livro(self, criterio_gen, valor_esp): #buscar
         resultados = [livro for livro in self.livros if getattr(livro, criterio_gen) == valor_esp]
         if resultados:
-            for livro in resultados: print("Livro encontrado")
-        else: print("Nenhum livro encontrado")
+            for livro in resultados:
+                print("Livro encontrado")
+        else:
+            print("Nenhum livro encontrado")
 
     def ordenar_livro_autor(self): #ordenar
         self.livros.sort(key=lambda livro: livro.autor) #organiza os livros pela ordem alfabética dos autores
